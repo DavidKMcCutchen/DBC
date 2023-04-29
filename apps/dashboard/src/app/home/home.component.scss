@@ -1,0 +1,63 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+      color: #6c757d;
+    }
+  }
+  
+  .projects {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    
+    .project-card {
+      width: 100%;
+      max-width: 350px;
+      padding: 1.5rem;
+      border: 1px solid #dee2e6;
+      border-radius: 0.25rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #6c757d;
+      }
+    }
+  }
+  
+
+<header [@headerState]="headerState">
+  <h1>Your Header</h1>
+</header>
+
+<div class="content" [@bgColorState]="bgColorState">
+  <!-- Add your content here, with enough elements to create a scrollable page -->
+</div>
